@@ -144,13 +144,16 @@ module.exports = function (str) {
   // U+00CC  0xCC  Ì ÃŒ  %C3 %8C
   .replace(/ÃŒ/g, 'Ì')
   // U+00CD  0xCD  Í Ã   %C3 %8D
-  .replace(/Ã/g, 'Í')
+  // Disabled because could conflict with actual 'Ã'
+  // .replace(/Ã/g, 'Í')
   // U+00CE  0xCE  Î ÃŽ  %C3 %8E
   .replace(/ÃŽ/g, 'Î')
   // U+00CF  0xCF  Ï Ã   %C3 %8F
-  .replace(/Ã/g, 'Ï')
+  // Disabled because could conflict with actual 'Ã'
+  // .replace(/Ã/g, 'Ï')
   // U+00D0  0xD0  Ð Ã   %C3 %90
-  .replace(/Ã/g, 'Ð')
+  // Disabled because could conflict with actual 'Ã'
+  // .replace(/Ã/g, 'Ð')
   // U+00D1  0xD1  Ñ Ã‘  %C3 %91
   .replace(/Ã‘/g, 'Ñ')
   // U+00D2  0xD2  Ò Ã’  %C3 %92
@@ -175,14 +178,16 @@ module.exports = function (str) {
   .replace(/Ã›/g, 'Û')
   // U+00DC  0xDC  Ü Ãœ  %C3 %9C
   .replace(/Ãœ/g, 'Ü')
+  // Disabled because could conflict with actual 'Ã'
   // U+00DD  0xDD  Ý Ã   %C3 %9D
-  .replace(/Ã/g, 'Ý')
+  // .replace(/Ã/g, 'Ý')
   // U+00DE  0xDE  Þ Ãž  %C3 %9E
   .replace(/Ãž/g, 'Þ')
   // U+00DF  0xDF  ß ÃŸ  %C3 %9F
   .replace(/ÃŸ/g, 'ß')
   // U+00E0  0xE0  à Ã   %C3 %A0
-  .replace(/Ã/g, 'à')
+  // Disabled because could conflict with actual 'Ã'
+  // .replace(/Ã/g, 'à')
   // U+00E1  0xE1  á Ã¡  %C3 %A1
   .replace(/Ã¡/g, 'á')
   // U+00E2  0xE2  â Ã¢  %C3 %A2
