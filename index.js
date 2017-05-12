@@ -19,8 +19,7 @@ module.exports = function (str) {
   // U+2030  0x89  ‰ â€°   %E2 %80 %B0
   .replace(/â€°/g, '‰')
   // U+0160  0x8A  Š Å   %C5 %A0
-  // Disabled because could conflict with actual 'Å'
-  // .replace(/Å/g, 'Š')
+  .replace(/Å\u00A0/g, 'Š')
   // U+2039  0x8B  ‹ â€¹   %E2 %80 %B9
   .replace(/â€¹/g, '‹')
   // U+0152  0x8C  Œ Å’  %C5 %92
@@ -144,16 +143,13 @@ module.exports = function (str) {
   // U+00CC  0xCC  Ì ÃŒ  %C3 %8C
   .replace(/ÃŒ/g, 'Ì')
   // U+00CD  0xCD  Í Ã   %C3 %8D
-  // Disabled because could conflict with actual 'Ã'
-  // .replace(/Ã/g, 'Í')
+  .replace(/Ã\u008D/g, 'Í')
   // U+00CE  0xCE  Î ÃŽ  %C3 %8E
   .replace(/ÃŽ/g, 'Î')
   // U+00CF  0xCF  Ï Ã   %C3 %8F
-  // Disabled because could conflict with actual 'Ã'
-  // .replace(/Ã/g, 'Ï')
+  .replace(/Ã\u008F/g, 'Ï')
   // U+00D0  0xD0  Ð Ã   %C3 %90
-  // Disabled because could conflict with actual 'Ã'
-  // .replace(/Ã/g, 'Ð')
+  .replace(/Ã\u0090/g, 'Ð')
   // U+00D1  0xD1  Ñ Ã‘  %C3 %91
   .replace(/Ã‘/g, 'Ñ')
   // U+00D2  0xD2  Ò Ã’  %C3 %92
@@ -178,16 +174,14 @@ module.exports = function (str) {
   .replace(/Ã›/g, 'Û')
   // U+00DC  0xDC  Ü Ãœ  %C3 %9C
   .replace(/Ãœ/g, 'Ü')
-  // Disabled because could conflict with actual 'Ã'
   // U+00DD  0xDD  Ý Ã   %C3 %9D
-  // .replace(/Ã/g, 'Ý')
+  .replace(/Ã\u009D/g, 'Ý')
   // U+00DE  0xDE  Þ Ãž  %C3 %9E
   .replace(/Ãž/g, 'Þ')
   // U+00DF  0xDF  ß ÃŸ  %C3 %9F
   .replace(/ÃŸ/g, 'ß')
   // U+00E0  0xE0  à Ã   %C3 %A0
-  // Disabled because could conflict with actual 'Ã'
-  // .replace(/Ã/g, 'à')
+  .replace(/Ã\u00A0/g, 'à')
   // U+00E1  0xE1  á Ã¡  %C3 %A1
   .replace(/Ã¡/g, 'á')
   // U+00E2  0xE2  â Ã¢  %C3 %A2
@@ -213,8 +207,7 @@ module.exports = function (str) {
   // U+00EC  0xEC  ì Ã¬  %C3 %AC
   .replace(/Ã¬/g, 'ì')
   // U+00ED  0xED  í Ã­  %C3 %AD
-  // Disabled because could conflict with actual 'Ã­'
-  // .replace(/Ã­/g, 'í')
+  .replace(/Ã­\u00AD/g, 'í')
   // U+00EE  0xEE  î Ã®  %C3 %AE
   .replace(/Ã®/g, 'î')
   // U+00EF  0xEF  ï Ã¯  %C3 %AF
