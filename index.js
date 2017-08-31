@@ -11,7 +11,7 @@ module.exports = function (str) {
   // U+2026  0x85  … â€¦   %E2 %80 %A6
   .replace(/â€¦/g, '…')
   // U+2020  0x86  † â€  %E2 %80 %A0
-  .replace(/â€/g, '†')
+  .replace(/â€\u00A0/g, '†')
   // U+2021  0x87  ‡ â€¡   %E2 %80 %A1
   .replace(/â€¡/g, '‡')
   // U+02C6  0x88  ˆ Ë†  %CB %86
@@ -33,7 +33,7 @@ module.exports = function (str) {
   // U+201C  0x93  “ â€œ   %E2 %80 %9C
   .replace(/â€œ/g, '“')
   // U+201D  0x94  ” â€  %E2 %80 %9D
-  .replace(/â€/g, '”')
+  .replace(/â€\u009D/g, '”')
   // U+2022  0x95  • â€¢   %E2 %80 %A2
   .replace(/â€¢/g, '•')
   // U+2013  0x96  – â€“   %E2 %80 %93
@@ -207,7 +207,7 @@ module.exports = function (str) {
   // U+00EC  0xEC  ì Ã¬  %C3 %AC
   .replace(/Ã¬/g, 'ì')
   // U+00ED  0xED  í Ã­  %C3 %AD
-  .replace(/Ã­\u00AD/g, 'í')
+  .replace(/Ã\u00AD/g, 'í')
   // U+00EE  0xEE  î Ã®  %C3 %AE
   .replace(/Ã®/g, 'î')
   // U+00EF  0xEF  ï Ã¯  %C3 %AF
