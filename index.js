@@ -244,4 +244,6 @@ module.exports = function (str) {
   .replace(/Ã¾/g, 'þ')
   // U+00FF  0xFF  ÿ Ã¿  %C3 %BF
   .replace(/Ã¿/g, 'ÿ')
+  // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/normalize
+  .normalize()
 }
