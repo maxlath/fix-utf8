@@ -18,5 +18,8 @@ fixUtf8("L'avenir des idÃ©es")
 // => "L'avenir des idées"
 ```
 
+## See Also
+* [forceutf8](https://github.com/neitanod/forceutf8) (PHP)
+
 ## License
 [MIT](LICENSE.md)
