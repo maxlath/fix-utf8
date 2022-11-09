@@ -1,5 +1,4 @@
-module.exports = function (str) {
-  return str
+module.exports = (str) => str
   // U+20AC  0x80  € â‚¬   %E2 %82 %AC
   .replace(/â‚¬/g, '€')
   // U+201A  0x82  ‚ â€š   %E2 %80 %9A
@@ -246,4 +245,3 @@ module.exports = function (str) {
   .replace(/Ã¿/g, 'ÿ')
   // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/normalize
   .normalize()
-}
