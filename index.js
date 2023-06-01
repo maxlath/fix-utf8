@@ -1,3 +1,8 @@
+/**
+ * A function that tries its best to recover lost Latin Unicode characters
+ * @param {string} str -- text to fix
+ * @returns {string}
+ */
 function fixUtf8 (str) {
   return str
   // U+20AC  0x80  € â‚¬   %E2 %82 %AC
