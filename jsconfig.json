@@ -1,5 +1,10 @@
 {
+  "include": [
+    "index.js",
+    "tests"
+  ],
   "compilerOptions": {
+    "target": "es2020",
     "checkJs": true,
   }
 }

@@ -5,7 +5,7 @@
   "description": "Fix Unicode encoding errors",
   "main": "index.js",
   "scripts": {
-    "test": "node test/*.js"
+    "test": "node tests/*.js"
   },
   "files": [
     "index.js"
