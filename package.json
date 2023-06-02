@@ -3,16 +3,11 @@
   "version": "1.2.1",
   "description": "Fix Unicode encoding errors",
   "main": "index.js",
-  "types": "./index.d.ts",
   "scripts": {
-    "build": "npm run build-types",
-    "build-types": "tsc --declaration --emitDeclarationOnly --allowJs ./index.js",
-    "prepublish": "npm run build",
     "test": "mocha"
   },
   "files": [
-    "index.js",
-    "index.d.ts"
+    "index.js"
   ],
   "repository": {
     "type": "git",
@@ -36,7 +31,6 @@
   "homepage": "https://github.com/maxlath/fix-utf8#readme",
   "devDependencies": {
     "mocha": "^10.1.0",
-    "should": "^13.2.3",
-    "typescript": "^5.0.4"
+    "should": "^13.2.3"
   }
 }
