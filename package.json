@@ -1,10 +1,11 @@
 {
   "name": "fix-utf8",
   "version": "1.2.1",
+  "type": "module",
   "description": "Fix Unicode encoding errors",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "node test/*.js"
   },
   "files": [
     "index.js"
@@ -28,9 +29,5 @@
   "bugs": {
     "url": "https://github.com/maxlath/fix-utf8/issues"
   },
-  "homepage": "https://github.com/maxlath/fix-utf8#readme",
-  "devDependencies": {
-    "mocha": "^10.1.0",
-    "should": "^13.2.3"
-  }
+  "homepage": "https://github.com/maxlath/fix-utf8#readme"
 }
