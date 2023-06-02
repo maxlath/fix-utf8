@@ -1,6 +1,9 @@
 # CHANGELOG
 *versions follow [SemVer](http://semver.org)*
 
+## 2.0.0 - 2023-06-02
+* [BREAKING CHANGE]: move to [ES modules](https://nodejs.org/api/esm.html)
+
 ## 1.2.0 - 2023-06-01
 * Add types using [JSDoc types annotations](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html)
 
