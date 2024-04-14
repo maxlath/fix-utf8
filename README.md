@@ -13,7 +13,8 @@ $ npm install fix-utf8
 ## How-To
 
 ```js
-const fixUtf8 = require('fix-utf8')
+import fixUtf8 from 'fix-utf8'
+
 fixUtf8("L'avenir des idÃ©es")
 // => "L'avenir des idées"
 ```
