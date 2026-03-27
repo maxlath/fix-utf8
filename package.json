@@ -12,7 +12,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maxlath/fix-utf8.git"
+    "url": "https://codeberg.org/maxlath/fix-utf8"
   },
   "keywords": [
     "unicode",
@@ -27,7 +27,7 @@
   "author": "maxlath",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/maxlath/fix-utf8/issues"
+    "url": "https://codeberg.org/maxlath/fix-utf8/issues"
   },
-  "homepage": "https://github.com/maxlath/fix-utf8#readme"
+  "homepage": "https://codeberg.org/maxlath/fix-utf8#readme"
 }
