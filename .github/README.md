@@ -1,1 +1,1 @@
-## ⚠<fe0f> This repository was moved to Codeberg 👉 https://codeberg.org/maxlath/fix-utf8
+## ⚠️ This repository was moved to Codeberg 👉 https://codeberg.org/maxlath/fix-utf8
